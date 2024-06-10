@@ -98,9 +98,9 @@ h1, h3, p {
     fill: #FFFFFF;
 }
 
-.input-field:hover .input-icon,
-.input-field:focus .input-icon {
-    fill: #FFFFFF;
+.input-field:hover + .input-icon,
+.input-field:focus + .input-icon {
+    fill: #4D5AE5;
 }
 
 .modal-close-icon {
@@ -129,13 +129,13 @@ h1, h3, p {
 }
 
 .the-first {}
-}
+
 
 .form-name {
     width: 100%;
     border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
-    height: 40px; 
+    height: 58px; 
     margin-bottom: 8px;
 }
 
@@ -143,11 +143,17 @@ h1, h3, p {
     line-height: 1.17; 
     font-size: 12px;
     letter-spacing: 0.04em;
-    color: ##8e8f99;
+    color: #8e8f99;
     display: block;
     margin-bottom: 4px;
 }
 
+.checkbox:checked + .modal-p > .footer-span {
+    background-color: #404BBF;
+    fill: #f4f4fd;
+    border: none;
+    }
+     
 .for-icon {
     position: relative;
 }
@@ -164,7 +170,6 @@ h1, h3, p {
 }
 
 .input-field {
-    margin-top: 4px;
     padding-left: 38px;
     padding-right: 20px;
     width: 100%;
@@ -249,24 +254,28 @@ h1, h3, p {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
-.modal-button {
+/* .modal-button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding-top: 24px;
     padding-bottom: 24px;
-}    
+}     */
 
 .box-button {
     display: block;
     border-radius: 4px;
-    padding: 16px 32px;
     min-width: 169px;
     height: 56px;
     text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 100px;
+    
 }
 
 .style-button {
